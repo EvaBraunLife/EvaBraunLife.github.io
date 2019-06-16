@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>EvaLife</title>
-  </head>
-  <body>
-    <center><h1>EvaBraunLife - </h1><h1>на неральных событиях</h1></center>
-    <center><button><a href="start.html">Начать игру</a></button></center>
-  </body>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Игра Ева Life</title>
+		<link rel="stylesheet" href="styles\style.css">
+		<link rel="stylesheet" href="bg_egor\bg_style_egor.css">
+		<script src="scripts\scriptQuest.js">
+		</script>
+		<script src="bg_egor\bg_animating_egor.js"></script>
+		<script>
+			window.onload = function(){ animateBackground(10, 0); startQuest(); };
+		</script>
+	</head>
+	<body>
+		<audio controls loop>
+			<source src="audio\bgmusic.mp3" type="audio/mpeg">
+		</audio>
+		<div id="context">
+			<div class="content" id="upper"></div>
+			<div class="choice content" id="left-choice"></div>
+			<div class="choice content" id="right-choice"></div>
+			<div class="content" id="repeat">Евнуть с начала</div>
+			<div id="achivement">
+				<div id="head-achivement">Достижение получено!</div>
+				<div id="img-achivement"></div>
+				<div id="name-achivement"></div>
+			</div>
+		</div>
+	</body>
 </html>
